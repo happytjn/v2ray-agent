@@ -1118,7 +1118,7 @@ checkIP() {
 			fi
 
 			handleNginx start
-			checkIP
+			#checkIP
 		else
 			exit 0
 		fi
@@ -4145,7 +4145,7 @@ ipv6Routing() {
 		exit 0
 	fi
 
-	checkIPv6
+	#checkIPv6
 	echoContent skyBlue "\n功能 1/${totalProgress} : IPv6分流"
 	echoContent red "\n=============================================================="
 	echoContent yellow "1.添加域名"
@@ -5099,7 +5099,7 @@ customXrayInstall() {
 		initTLSNginxConfig 2
 		handleXray stop
 		handleNginx start
-		checkIP
+		#checkIP
 
 		installTLS 3
 		handleNginx stop
@@ -5180,7 +5180,7 @@ v2rayCoreInstall() {
 
 	handleV2Ray stop
 	handleNginx start
-	checkIP
+	#checkIP
 
 	installTLS 4
 	handleNginx stop
@@ -5215,7 +5215,7 @@ xrayCoreInstall() {
 
 	handleXray stop
 	handleNginx start
-	checkIP
+	#checkIP
 
 	installTLS 4
 	handleNginx stop
